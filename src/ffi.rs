@@ -572,10 +572,10 @@ pub struct std_hash {
 }
 pub type std_integral_constant_value_type<_Tp> = _Tp;
 pub type std_integral_constant_type = u8;
-extern "C" {
-    #[link_name = "\u{1}value"]
-    pub static std_value: _Tp;
-}
+// extern "C" {
+//     #[link_name = "\u{1}value"]
+//     pub static std_value: _Tp;
+// }
 pub type std_true_type = u8;
 pub type std_false_type = u8;
 pub type std__BoolConstant = u8;
